@@ -15,7 +15,7 @@ class App < HyperComponent
   # Route('/user/:id/name', mounts: UserName) : path segments beginning with a colon will be captured in the match param
   # see the hyper-router gem documentation for more details
 
-  render do
-    H1 { "Hello world from Hyperstack!" }
+  render(SECTION) do
+    Movies()
   end
 end
